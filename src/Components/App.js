@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 import "../index.css";
 dotenv.config();
 
-const App = (props) => {
+function App (props)  {
   const [giphy, setData] = useState([]);
 
   useEffect(() => {
