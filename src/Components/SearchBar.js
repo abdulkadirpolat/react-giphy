@@ -1,9 +1,11 @@
 import React from "react";
 
-const SearchBar = (props) => {
+function SearchBar(props) {
   return (
-    <div className="bg-white sticky top-0 w-full h-16 flex
-     items-center justify-center py-3 px-12 shadow-md z-10 ">
+    <div
+      className="bg-white sticky top-0 w-full h-16 flex
+     items-center justify-center py-3 px-12 shadow-md z-10 "
+    >
       <input
         className="font-bold h-full w-full max-w-sm text-2xl 
         text-center rounded-md outline-none border-2 border-opacity-70 
@@ -14,6 +16,6 @@ const SearchBar = (props) => {
       />
     </div>
   );
-};
+}
 
 export default SearchBar;
