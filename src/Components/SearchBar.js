@@ -1,23 +1,7 @@
-import { useEffect, useState } from "react";
+import  React from "react";
 
-function SearchBar({searchChange, defaultSubmit, changeContent }) {
-  // const [searchChange, setSearchChange] = useState("");
+function SearchBar({ searchChange, defaultSubmit,  changeContent }) {
 
-  // const changeContent = (e) => {
-  //   setSearchChange(e.target.value.trim());
-  // };
-
-  // const defaultSubmit = (e) => {
-  //   e.preventDefault();
-
-  //   if (searchChange === "") {
-  //     return false;
-  //   }
-  // };
-
-  const search = (e) => {
-    setSearchChange(e.target.value.trim().toLowerCase());
-  };
   return (
     <form
       onSubmit={defaultSubmit}
@@ -25,7 +9,7 @@ function SearchBar({searchChange, defaultSubmit, changeContent }) {
      items-center justify-center py-3 px-12 shadow-md z-10 "
     >
       <input
-        onChange={changeContent}
+       onChange={changeContent}
         className="font-bold h-full w-full max-w-sm text-2xl 
         text-center rounded-md outline-none border-2 border-opacity-70 
         border-gray-300 focus:border-transparent focus:ring-2 
